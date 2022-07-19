@@ -12,6 +12,7 @@ body{
     overflow: hidden;
     background-color: white;
     padding: 20px 10px;
+    padding-left: 10%;
   }
   
   /* Style the header links */
@@ -103,3 +104,85 @@ body{
   .header-img img{
     width: 70%;
   }
+  @media screen and (max-width: 500px){
+    .header-container{
+        display: block;
+    }
+    .header-img img{
+       width: 100%;
+    }
+  }
+
+  /* Partner */
+  .partner-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+    left: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+    border: 1px solid gray;
+    border-left: 0px;
+    border-right: 0px;
+}
+ 
+    
+    
+  
+@media (max-width: 767.98px){
+    .partner-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 20px;
+    }
+}
+
+/* collection */
+.collection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: absolute;
+    left: 80px;
+    right: 70px;
+    
+    gap: 20px;
+
+}
+.conatiner{
+    display: block;
+}
+.conatiner>h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.collection-item{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    top: 150px;
+    
+    
+    
+}
+.rating{
+    display: flex;
+
+}
+.fa-star {
+    color: gold;
+}
+.fa-star-half{
+    color: gold;
+}
+.collection-item img{
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+@media screen and (max-width: 500px){
+    .collection{
+        display: block;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
